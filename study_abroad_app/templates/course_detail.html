@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<style>
+    #div2 {
+  
+  position: relative;
+  animation-name: example1;
+  animation-duration: 2s;  
+  animation-fill-mode: forwards;
+}
+@keyframes example1 {
+  from {top:100px;}
+  to {top: 30px; color: rgb(199, 197, 197);}
+  
+}
+    
+</style>
+
+<div style="background-image: url(https://wallpaperaccess.com/full/6592911.jpg);background-repeat: no-repeat;background-size: cover;height: 450px;">
+    <div style="background-color: rgba(0, 255, 221, 0.411);height: 450px;">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+        
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div id="div2">
+                    <h1 style="font-family: cursive;color: rgb(247, 244, 244);text-align: center;margin-top: 30%;font-size: 500%;">Course Detail </h1>
+                    <h5 style="color: white;text-align: center;">Home > Course Detail ></h5>
+
+                </div>
+      
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4"></div>
+          </div>
+        
+    </div>
+  </div>
+
+  <div>
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="p-2">
+                <img src="https://img.freepik.com/free-photo/male-electrician-works-switchboard-with-electrical-connecting-cable_169016-16352.jpg" alt="" class="w-100">
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+            <div >
+                <center>
+                    <h1 class="mt-3" style="font-family: cursive;color: rgb(5, 184, 184);">Electrical Engineering</h1>
+                    
+                </center>
+                <p class="mt-3 ps-4 pe-4 " style="text-align: justify;">
+                    ech in Electrical and Electronics Engineering is a four-year undergraduate programme 
+                    imparting fundamental knowledge in core disciplines such as control systems communications 
+                    radio frequency design signal processing microelectronics microprocessors power 
+                    generation and electrical machines.
+                </p>
+                <p class=" ps-4 pe-4" style="text-align: justify;">
+                    ech in Electrical and Electronics Engineering is a four-year undergraduate programme 
+                    imparting fundamental knowledge in core disciplines such as control systems communications 
+                    radio frequency design signal processing microelectronics microprocessors power 
+                    generation and electrical machines.
+                </p>
+                <center>
+                    <a href="{% url 'home' %}" class="btn" style="background-color: rgba(3, 172, 172, 0.76);color: white;"><b>Apply Now</b></a>
+
+                </center>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<style>
+    #div2 {
+  
+  position: relative;
+  animation-name: example1;
+  animation-duration: 2s;  
+  animation-fill-mode: forwards;
+}
+@keyframes example1 {
+  from {top:100px;}
+  to {top: 30px; color: rgb(199, 197, 197);}
+  
+}
+    
+</style>
+
+<div style="background-image: url(https://wallpaperaccess.com/full/6592911.jpg);background-repeat: no-repeat;background-size: cover;height: 450px;">
+    <div style="background-color: rgba(0, 255, 221, 0.411);height: 450px;">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+        
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div id="div2">
+                    <h1 style="font-family: cursive;color: rgb(247, 244, 244);text-align: center;margin-top: 30%;font-size: 500%;">Contact Us</h1>
+                    <h5 style="color: white;text-align: center;">Home > Contact Us ></h5>
+
+                </div>
+      
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4"></div>
+          </div>
+        
+    </div>
+  </div>
+
+
+  <div>
+        <div class="row mt-4">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="p-3">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d251482.68723557587!2d76.30093384999999!3d9.982372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d514abec6bf%3A0xbd582caa5844192!2sKochi%2C%20Kerala!5e0!3m2!1sen!2sin!4v1685773207601!5m2!1sen!2sin" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <div class="row p-2">
+                <div class="co1-sm-12 col-md-4 col-lg-4">
+                  <h4 style="font-family: cursive;color: rgb(6, 177, 177);">ADDRESS:</h4>
+                  <p>
+                    198 West 21th Street, Suite 721 New York NY 10016
+                  </p>
+                </div>
+                <div class="co1-sm-12 col-md-4 col-lg-4">
+                  <h4 style="font-family: cursive;color: rgb(5, 179, 179);">EMAIL:</h4>
+                  <p>
+                    info@yoursite.com
+                  </p>
+
+                </div>
+                <div class="co1-sm-12 col-md-4 col-lg-4">
+                  <h4 style="font-family: cursive;color: rgb(4, 179, 179);">PHONE:</h4>
+                  <p>
+                    +91 9996166543
+                  </p>
+
+                </div>
+              </div>
+              <div class="row mt-2 ">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                  <div class="row mt-2 ps-2 pe-2">
+                    <div class="col-sm-12 col-lg-6 col-md-6">
+                      <input type="text" class="form-control mt-2"  name="" id="" placeholder="Name">
+                    </div>
+                    <div class="col-sm-12 col-lg-6 col-md-6">
+                      <input type="text" class="form-control mt-2" name="" id="" placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="row mt-2 ps-2 pe-2">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                      <input type="text" class="form-control" name="" id="" placeholder="Subject">
+
+                    </div>
+                  </div>
+                  <div class="row mt-2 ps-2 pe-2">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                      <textarea cols="" rows="5"  class="form-control" name="" id="" placeholder="Type here....."></textarea>
+
+                    </div>
+                  </div>
+                  <div class="row mt-2 ps-2 pe-2">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                      <a href="" class="btn" style="background-color: rgb(5, 177, 162);color: white;">Send Now</a>
+                    </div>
+                  </div>
+                  <div class="row mt-5 ps-2 pe-2">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                      <h6 style="color: rgb(2, 138, 138);font-family: cursive;">Follow us here</h6>
+                      <a href=""><img width="48" height="48" src="https://img.icons8.com/fluency/48/twitter.png" alt="twitter"/></a>
+                      <a href=""><img width="48" height="48" src="https://img.icons8.com/fluency/48/dribbble-circled.png" alt="dribbble-circled"/></a>                    
+
+                      <a href=""><img width="48" height="48" src="https://img.icons8.com/fluency/48/facebook-new.png" alt="facebook-new"/></a>
+                    <a href=""><img width="48" height="48" src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="instagram-new--v1"/></a>
+                  </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+        </div>
+  </div>
+
+
+
+{% endblock %}

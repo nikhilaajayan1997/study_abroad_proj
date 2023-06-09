@@ -1,0 +1,941 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<style>
+
+  ::placeholder{
+    color: white;
+  }
+
+  #a_divv2{
+    background-color: white;
+    color: rgb(3, 155, 155);
+  }
+  /* #a_divv2:hover{
+    background-color: white;
+    color: rgb(3, 155, 155);
+  } */
+
+  #divv2{
+    background-color: rgb(8, 165, 157);
+    color: white;
+  }
+
+
+  #divv2:hover{
+    background-color: rgb(248, 250, 250);
+    color: rgb(37, 37, 37);
+  }
+
+
+
+
+
+
+
+
+
+
+    .cards-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  border-radius: 0;
+}
+.carousel-inner {
+  padding: 1em;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #e1e1e1;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (min-width: 768px) {
+  .card img {
+    height: 11em;
+  }
+}
+
+
+
+
+.card1{
+    width: 100%;
+    height: 330px;
+    padding: 2rem 1rem;
+    background: #fff;
+    position: relative;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+    transition: 0.5s ease-in-out;
+}
+.card1::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,rgba(41, 109, 100, 0.5),rgb(41, 109, 72));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+}
+.card1:hover::before{
+    opacity: 1;
+}
+.card1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.card1 .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+
+}
+.card1:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.animate-charcter
+{
+   text-transform: uppercase;
+   margin-top: 20%;
+  background-image: linear-gradient(
+    -225deg,
+    #574b15 0%,
+    #aeb107 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  /* text-fill-color: transparent; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 190px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* ......................testimonial................... */
+
+
+
+/* ......................testimonial................... */
+
+
+/* ....  our cources.......................... */
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 300px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.container:hover .overlay {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: justify;
+}
+/* ..........................our cources............................................... */
+
+
+
+
+
+
+</style>
+
+
+<div  id="carouselExampleFade" class="carousel slide carousel-fade " data-bs-ride="carousel" style="margin-top: -20px;">
+    <div class="carousel-inner">
+      <div class="carousel-item active " data-bs-interval="2000">
+        <div class="carousel-caption d-none d-md-block mb-5" >
+          <h1 style="font-family:cursive;color: rgb(15, 15, 15);">BEST EDUCATION EXPERTISE</h1>
+          <h5 style="color: rgb(29, 28, 28);">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts..</h5>
+            <button class="btn mt-3" style="color: white;background-color: rgb(3, 165, 165);border: 2px solid white;">GET START NOW</button>
+            <button class="btn btn-dark mt-3" style="color: white;border: 2px solid white;">VIEW COURSE</button>
+
+          </div>
+        <img src="https://www.studyabroadguide.com/wp-content/uploads/IB-Program-Benefits-Benefits-of-IB-Diploma.jpg" style="height: 500px;" class="d-block w-100" alt="...">
+        
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <div class="carousel-caption d-none d-md-block mb-5">
+          <h1 style="font-family:cursive;color: rgb(248, 245, 245);">BEST EDUCATION EXPERTISE</h1>
+          <h5 style="color: rgb(214, 212, 212);">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts..</h5>
+            <button class="btn mt-3" style="color: white;background-color: rgb(3, 165, 165);border: 2px solid white;">GET START NOW</button>
+            <button class="btn btn-dark mt-3" style="color: white;border: 2px solid white;">VIEW COURSE</button>
+
+        </div>
+        <img src="https://www.teahub.io/photos/full/174-1747033_college-student-wallpaper.jpg" style="height: 500px;" class="d-block w-100" alt="...">
+        <div style="background-image: url;">
+
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <div class="carousel-caption d-none d-md-block mb-5">
+          <h1 style="font-family:cursive;color: rgb(247, 244, 244);">BEST EDUCATION EXPERTISE</h1>
+          <h5 style="color: rgb(231, 229, 229);">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts..</h5>
+            <button class="btn mt-3" style="color: white;background-color: rgb(3, 165, 165);border: 2px solid white;">GET START NOW</button>
+            <button class="btn btn-dark mt-3" style="color: white;border: 2px solid white;">VIEW COURSE</button>
+
+          </div>
+            <img src="https://media.licdn.com/dms/image/D4E12AQEpodA5lAWIIQ/article-cover_image-shrink_600_2000/0/1659408997792?e=2147483647&v=beta&t=nghNSXb_dwNDg8TmCi7JQxy26MCxvprg1Qd2XMwpMEs" style="height: 500px;" class="d-block w-100" alt="...">
+
+          <!-- </div> -->
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div style="background-color:rgb(7, 131, 120);">
+    <div class="row">
+      <div class="col-sm-12 col-md-4 col-lg-4" >
+        <div class="mt-3 mb-3" style="border-right: 1px solid white;height: 120px;">
+            <center>          
+              <img width="50" height="50" src="https://img.icons8.com/arcade/64/address.png" alt="address"/>           </center>          
+            <h4 style="color: white;text-align: center;">ADDRESS</h4>
+          <p style="color: white;text-align: center;">
+            198 West 21th Street, Suite 721 New York NY 10016
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-4">
+        <div class="mt-3 mb-3" style="border-right: 1px solid white;height: 120px;">
+          <center>          
+            <img width="50" height="50" src="https://img.icons8.com/arcade/64/new-post--v1.png" alt="new-post--v1"/>
+         </center>          
+          <h4 style="color: white;text-align: center;">EMAIL</h4>
+        <p style="color: white;text-align: center;">
+          info@yoursite.com
+        </p>
+      </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-4">
+        <div class="mt-3 mb-3" style="border-right: 1px solid white;height: 120px;">
+          <center>          
+            <img width="50" height="50" src="https://img.icons8.com/arcade/64/phone.png" alt="phone"/>         </center>          
+          <h4 style="color: white;text-align: center;">PHONE</h4>
+        <p style="color: white;text-align: center;">
+          9961665434
+        </p>
+      </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <div class="mt-5">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div style="width: 100%;">
+          <img src="https://img.freepik.com/free-photo/portrait-happy-excited-man-holding-laptop-computer_171337-12121.jpg" alt="" style="height: 500px;width: 100%;">
+        </div>
+
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+
+        <div class="row mt-3">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <div id="divv2" class="card w-75 mb-3" >
+               <div class="card-body">
+                 <h5 class="card-title">Online Courses</h5>
+                 <p class="card-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts..</p>
+                 <a href="{% url 'course' %}" id="a_divv2" class="btn btn-primary" >View More</a>
+                </div>
+              </div>
+          </div>         
+        </div>
+        <div class="row mt-3">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <div id="divv2" class="card w-75 mb-3" >
+               <div class="card-body">
+                 <h5 class="card-title">Earn Certificates</h5>
+                 <p class="card-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                 <a href="#" id="a_divv2" class="btn btn-primary">View More</a>
+                </div>
+              </div>
+          </div>         
+        </div>
+        <div class="row mt-3">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <div id="divv2" class="card w-75 mb-3" >
+               <div class="card-body">
+                 <h5 class="card-title">Learn With Experts</h5>
+                 <p class="card-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts..</p>
+                 <a href="{% url 'teacher' %}" id="a_divv2" class="btn btn-primary">View More</a>
+               </div>
+            </div>
+          </div>         
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+  <div class="w-100" style="background-image: url(https://st2.depositphotos.com/1017986/8720/i/950/depositphotos_87200076-stock-photo-group-of-happy-students-showing.jpg);background-repeat: no-repeat;background-size: cover;">
+    <div style="background-color: rgba(9, 179, 170, 0.637);">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="p-5" style="width: 98%;">
+            <img src="https://media.istockphoto.com/id/182240679/photo/university-sign-in-fall.jpg?s=612x612&w=0&k=20&c=owl2vz5MfplIcvz222zqQ8wlUqStEP5Srf_2NnuZrgo=" alt="" style="width:100% ;">
+          </div>
+  
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="mt-5 p-4">
+            <h1 style="color: white;font-family: cursive;text-align: center;">Academia University</h1>
+            <p style="color: white;text-align: justify;">
+              Separated they live in. A small river named Duden flows by their place and supplies it with the necessary 
+              regelialia. It is a paradisematic country. A small river named Duden flows by their place and supplies it with 
+              the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+            </p>
+            <p style="color: white;text-align: justify;">
+              Separated they live in. A small river named Duden flows by their place and supplies it with the necessary 
+              regelialia. It is a paradisematic country. A small river named Duden flows by their place and supplies it with 
+              the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ............Courses......................................................... -->
+
+<div class="mt-5 mb-5">
+  <div class="row pt-5">
+    <div class="col-sm-12 col-md-4 col-lg-4"></div>
+    <div class="col-sm-12 col-md-4 col-lg-4">
+      <h5 style="text-align: center;color: rgb(7, 131, 120);">OUR COURSES</h5>
+
+      <h1 style="text-align: center;font-family: cursive;">Explore Our Courses</h1>
+    </div>
+    <div class="col-sm-12 col-md-4 col-lg-4"></div>
+
+  </div>
+
+
+  <div class="row mt-5">
+    <div class="col-sm-12 col-md-3 col-lg-3">
+      <div class="container" style="border-radius: 15px;">
+        <img src="https://www.analyticsinsight.net/wp-content/uploads/2020/01/online-course-main-800x549.png" alt="Avatar" class="image" style="border-radius: 15px;">
+        <div class="overlay" style="border-radius: 15px;">
+          <div>
+            <center>            
+              <h3 class="p-2" style="font-family: cursive;color: white;">Fundamentals of Electrical Engineering</h3>
+            </center>
+            <p class="p-3" style="text-align: justify;color: #dad7d7;font-family: Arial, Helvetica, sans-serif;">
+              Separated they live in. A small river named Duden flows by their place and supplies 
+              it with the necessary A small river named Duden flows by their
+            </p>
+            <center>
+              <a href="{% url 'course_detail' %}" class="btn" style="background-color: rgb(8, 250, 210);color: white;font-weight: bold;">Learn More</a>
+
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-3 col-lg-3">
+      <div class="container" style="border-radius: 15px;">
+        <img src="https://www.analyticsinsight.net/wp-content/uploads/2020/01/online-course-main-800x549.png" alt="Avatar" class="image" style="border-radius: 15px;">
+        <div class="overlay" style="border-radius: 15px;">
+          <div>
+            <center>            
+              <h3 class="p-2" style="font-family: cursive;color: white;">Fundamentals of Electrical Engineering</h3>
+            </center>
+            <p class="p-3" style="text-align: justify;color: #dad7d7;font-family: Arial, Helvetica, sans-serif;">
+              Separated they live in. A small river named Duden flows by their place and supplies 
+              it with the necessary A small river named Duden flows by their
+            </p>
+            <center>
+              <a href="{% url 'course_detail' %}" class="btn" style="background-color: rgb(8, 250, 210);color: white;font-weight: bold;">Learn More</a>
+
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-3 col-lg-3">
+      <div class="container" style="border-radius: 15px;">
+        <img src="https://www.analyticsinsight.net/wp-content/uploads/2020/01/online-course-main-800x549.png" alt="Avatar" class="image" style="border-radius: 15px;">
+        <div class="overlay" style="border-radius: 15px;">
+          <div>
+            <center>            
+              <h3 class="p-2" style="font-family: cursive;color: white;">Fundamentals of Electrical Engineering</h3>
+            </center>
+            <p class="p-3" style="text-align: justify;color: #dad7d7;font-family: Arial, Helvetica, sans-serif;">
+              Separated they live in. A small river named Duden flows by their place and supplies 
+              it with the necessary A small river named Duden flows by their
+            </p>
+            <center>
+              <a href="{% url 'course_detail' %}" class="btn" style="background-color: rgb(8, 250, 210);color: white;font-weight: bold;">Learn More</a>
+
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-3 col-lg-3">
+      <div class="container" style="border-radius: 15px;">
+        <img src="https://www.analyticsinsight.net/wp-content/uploads/2020/01/online-course-main-800x549.png" alt="Avatar" class="image" style="border-radius: 15px;">
+        <div class="overlay" style="border-radius: 15px;">
+          <div>
+            <center>            
+              <h3 class="p-2" style="font-family: cursive;color: white;">Fundamentals of Electrical Engineering</h3>
+            </center>
+            <p class="p-3" style="text-align: justify;color: #dad7d7;font-family: Arial, Helvetica, sans-serif;">
+              Separated they live in. A small river named Duden flows by their place and supplies 
+              it with the necessary A small river named Duden flows by their
+            </p>
+            <center>
+              <a href="{% url 'course_detail' %}" class="btn" style="background-color: rgb(8, 250, 210);color: white;font-weight: bold;">Learn More</a>
+
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  
+
+</div>
+
+  <!-- ............Courses......................................................... -->
+
+
+
+
+
+
+
+
+<!-- ....................................................................... -->
+
+<div style="background-color:rgb(4, 173, 159);">
+  <div class="row pt-5 pb-5">
+    <div class="col-sm-12 col-md-8 col-lg-8">
+      <div class="mt-5 mb-5">
+        <h2 style="color: white;text-align: center;">Newsletter- Stay tune and get the latest update</h2>
+      <p style="color: white;text-align: center;">Far far away, behind the word mountains</p>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-4 col-lg-4">
+      <div class="mt-5 mb-5">
+        <input for=""  style="border-bottom: 1px solid white;width: 70%;background-color: rgb(4, 173, 159);border-top: none;border-left: none;border-right: none;" placeholder="email"><a href=""><img width="48" height="48" src="https://img.icons8.com/emoji/48/e-mail.png" alt="e-mail"/></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div>
+  <div class="row mt-5  mb-5" >
+      <div class="col-sm-12 col-md-3 col-lg-3"></div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+          <h1 style="text-align: center;">Our Team</h1>
+          <p style="text-align: center;color: rgb(4, 173, 159);font-size: large;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" >Far far away, behind the word mountains, far from the countries Vokalia  Consonantia, there live the blind texts. Separated they live in</p>
+      </div>
+      <div class="col-sm-12 col-md-3 col-lg-3"></div>
+  </div>
+  <div class="container mb-5 mt-4">
+      <div class="row">
+          <div class="col-sm-12 col-md-4 col-lg-4">
+              <div class="card1">
+                  <a href=""><img src="https://www.biowritingservice.com/wp-content/themes/tuborg/images/Executive%20Bio%20Sample%20Photo.png" alt=""></a>
+                  <div class="info">
+                      <h1 style="color:#f5f4f2;text-align: center;">Mark Web</h1>
+                      <p style="text-align: justify;">With supporting text below as a natural lead-in to additional content.
+                          With supporting text below as a natural lead-in to additional content</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-4">
+              <div class="card1">
+                  <a href=""><img src="https://www.eyeployment.com/wp-content/uploads/2018/01/ts_report1.jpg" alt=""></a>
+                  <div class="info">
+                      <h1 style="color: #f1f1ef;text-align: center;">Juliya Mary</h1>
+                      <p style="text-align: justify;">With supporting text below as a natural lead-in to additional content.
+                          With supporting text below as a natural lead-in to additional content</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-4">
+              <div class="card1">
+                  <a href=""><img src="https://www.biowritingservice.com/wp-content/themes/tuborg/images/Executive%20Bio%20Sample%20Photo.png" alt=""></a>
+                  <div class="info">
+                      <h1 style="color: #f3f3f2;text-align: center;">Mark Web</h1>
+                      <p style="text-align: justify;">With supporting text below as a natural lead-in to additional content.
+                          With supporting text below as a natural lead-in to additional content</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-sm-12 col-md-4 col-lg-4">
+            <div class="card1">
+                <a href=""><img src="https://www.biowritingservice.com/wp-content/themes/tuborg/images/Executive%20Bio%20Sample%20Photo.png" alt=""></a>
+                <div class="info">
+                    <h1 style="color:#f5f4f2;text-align: center;">Mark Web</h1>
+                    <p style="text-align: justify;">With supporting text below as a natural lead-in to additional content.
+                        With supporting text below as a natural lead-in to additional content</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4">
+            <div class="card1">
+                <a href=""><img src="https://www.eyeployment.com/wp-content/uploads/2018/01/ts_report1.jpg" alt=""></a>
+                <div class="info">
+                    <h1 style="color: #f1f1ef;text-align: center;">Juliya Mary</h1>
+                    <p style="text-align: justify;">With supporting text below as a natural lead-in to additional content.
+                        With supporting text below as a natural lead-in to additional content</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4">
+            <div class="card1">
+                <a href=""><img src="https://www.biowritingservice.com/wp-content/themes/tuborg/images/Executive%20Bio%20Sample%20Photo.png" alt=""></a>
+                <div class="info">
+                    <h1 style="color: #f3f3f2;text-align: center;">Mark Web</h1>
+                    <p style="text-align: justify;">With supporting text below as a natural lead-in to additional content.
+                        With supporting text below as a natural lead-in to additional content</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+  </div>
+</div>
+
+<div style="background-image: url(https://thehill.com/wp-content/uploads/sites/2/2022/03/ca_collegeenrollment_istock.jpg?w=1280&h=720&crop=1);background-repeat: no-repeat;background-size: cover;">
+  <div style="background-color:rgba(9, 179, 171, 0.568);">
+    <div class="row p-5">
+      <div class="col-sm-12 col-md-6 col-lg-6"></div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="row mt-5">
+          <div class="col-sm-12 col-md-2 col-lg-2"></div>
+          <div class="col-sm-12 col-md-8 col-lg-8">
+            <h1 style="color: white;font-family: cursive;">Request A Quote</h1>
+            <p class="pt-4" style="text-align: justify;color: white;">
+              Far far away, behind the word mountains, far from the countries Vokalia
+               and Consonantia, there live the blind texts.
+            </p>
+
+          </div>
+          <div class="col-sm-12 col-md-2 col-lg-2"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-2 col-lg-2"></div>
+          <div class="col-sm-12 col-md-8 col-lg-8">
+            <div class="row p-4">
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <input for=""  style="border-bottom: 1px solid white;width: 100%;background-color: transparent;border-top: none;border-left: none;border-right: none;color: white;" placeholder="FirstName">
+
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <input for=""  style="border-bottom: 1px solid white;width: 100%;background-color: transparent;border-top: none;border-left: none;border-right: none;color: white;" placeholder="LastName">
+
+              </div>
+            </div>
+
+            <div class="row p-4">
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <input for=""  style="border-bottom: 1px solid white;width: 100%;background-color: transparent;border-top: none;border-left: none;border-right: none;color: white;" placeholder="Phone">
+
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <input for=""  style="border-bottom: 1px solid white;width: 100%;background-color: transparent;border-top: none;border-left: none;border-right: none;color: white;" placeholder="Message">
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <button class="btn p-3" style="background-color:rgb(6, 183, 196) ;border-radius: 25px;color: white;font-weight: bold;">Request A Quote</button>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-6"></div>
+            </div>
+
+
+          </div>
+          <div class="col-sm-12 col-md-2 col-lg-2"></div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="bg-light">
+  <div class="row pt-5 mt-5">
+      <div class="col-sm-12 col-md-4 col-lg-4"></div>
+      <div class="col-sm-12 col-md-4 col-lg-4">
+          <center><h1 style="color: rgb(13, 180, 180);">Our Testimonials</h1></center>
+         <center>
+          <p style="color: #d6b005;">  
+              Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum laritas est etiam processus.
+       </p>
+         </center>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-4"></div>
+  </div>
+
+
+
+
+  <!-- ...........................................  testimonials........... -->
+
+
+  <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12">
+      <div>
+        <!-- Carousel wrapper -->
+    <div id="carouselMultiItemExample" class="carousel slide carousel-dark text-center" data-mdb-ride="carousel">
+        <!-- Controls -->
+        <div class="d-flex justify-content-center mb-4">
+          <button class="carousel-control-prev position-relative" type="button"
+            data-mdb-target="#carouselMultiItemExample" data-mdb-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next position-relative" type="button"
+            data-mdb-target="#carouselMultiItemExample" data-mdb-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- Inner -->
+        <div class="carousel-inner py-4">
+          <!-- Single item -->
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-4">
+                  <img class="rounded-circle shadow-1-strong mb-4"
+                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" alt="avatar"
+                    style="width: 150px;" />
+                  <h5 class="mb-3">Anna Deynah</h5>
+                  <p>UX Designer</p>
+                  <p class="text-muted">
+                    <i class="fas fa-quote-left pe-2"></i>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id
+                    officiis hic tenetur quae quaerat ad velit ab hic tenetur.
+                  </p>
+                  <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                  </ul>
+                </div>
+      
+                <div class="col-lg-4 d-none d-lg-block">
+                  <img class="rounded-circle shadow-1-strong mb-4"
+                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp" alt="avatar"
+                    style="width: 150px;" />
+                  <h5 class="mb-3">John Doe</h5>
+                  <p>Web Developer</p>
+                  <p class="text-muted">
+                    <i class="fas fa-quote-left pe-2"></i>
+                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+                    suscipit laboriosam, nisi ut aliquid commodi.
+                  </p>
+                  <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li>
+                      <i class="fas fa-star-half-alt fa-sm"></i>
+                    </li>
+                  </ul>
+                </div>
+      
+                <div class="col-lg-4 d-none d-lg-block">
+                  <img class="rounded-circle shadow-1-strong mb-4"
+                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp" alt="avatar"
+                    style="width: 150px;" />
+                  <h5 class="mb-3">Maria Kate</h5>
+                  <p>Photographer</p>
+                  <p class="text-muted">
+                    <i class="fas fa-quote-left pe-2"></i>
+                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                    praesentium voluptatum deleniti atque corrupti.
+                  </p>
+                  <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="far fa-star fa-sm"></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Single item -->
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-4">
+                  <img class="rounded-circle shadow-1-strong mb-4"
+                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(3).webp" alt="avatar"
+                    style="width: 150px;" />
+                  <h5 class="mb-3">John Doe</h5>
+                  <p>UX Designer</p>
+                  <p class="text-muted">
+                    <i class="fas fa-quote-left pe-2"></i>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id
+                    officiis hic tenetur quae quaerat ad velit ab hic tenetur.
+                  </p>
+                  <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                  </ul>
+                </div>
+      
+                <div class="col-lg-4 d-none d-lg-block">
+                  <img class="rounded-circle shadow-1-strong mb-4"
+                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(4).webp" alt="avatar"
+                    style="width: 150px;" />
+                  <h5 class="mb-3">Alex Rey</h5>
+                  <p>Web Developer</p>
+                  <p class="text-muted">
+                    <i class="fas fa-quote-left pe-2"></i>
+                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+                    suscipit laboriosam, nisi ut aliquid commodi.
+                  </p>
+                  <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li>
+                      <i class="fas fa-star-half-alt fa-sm"></i>
+                    </li>
+                  </ul>
+                </div>
+      
+                <div class="col-lg-4 d-none d-lg-block">
+                  <img class="rounded-circle shadow-1-strong mb-4"
+                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(5).webp" alt="avatar"
+                    style="width: 150px;" />
+                  <h5 class="mb-3">Maria Kate</h5>
+                  <p>Photographer</p>
+                  <p class="text-muted">
+                    <i class="fas fa-quote-left pe-2"></i>
+                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                    praesentium voluptatum deleniti atque corrupti.
+                  </p>
+                  <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="far fa-star fa-sm"></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Single item -->
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-4">
+                  <img class="rounded-circle shadow-1-strong mb-4"
+                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(6).webp" alt="avatar"
+                    style="width: 150px;" />
+                  <h5 class="mb-3">Anna Deynah</h5>
+                  <p>UX Designer</p>
+                  <p class="text-muted">
+                    <i class="fas fa-quote-left pe-2"></i>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id
+                    officiis hic tenetur quae quaerat ad velit ab hic tenetur.
+                  </p>
+                  <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                  </ul>
+                </div>
+      
+                <div class="col-lg-4 d-none d-lg-block">
+                  <img class="rounded-circle shadow-1-strong mb-4"
+                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(8).webp" alt="avatar"
+                    style="width: 150px;" />
+                  <h5 class="mb-3">John Doe</h5>
+                  <p>Web Developer</p>
+                  <p class="text-muted">
+                    <i class="fas fa-quote-left pe-2"></i>
+                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+                    suscipit laboriosam, nisi ut aliquid commodi.
+                  </p>
+                  <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li>
+                      <i class="fas fa-star-half-alt fa-sm"></i>
+                    </li>
+                  </ul>
+                </div>
+      
+                <div class="col-lg-4 d-none d-lg-block">
+                  <img class="rounded-circle shadow-1-strong mb-4"
+                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(7).webp" alt="avatar"
+                    style="width: 150px;" />
+                  <h5 class="mb-3">Maria Kate</h5>
+                  <p>Photographer</p>
+                  <p class="text-muted">
+                    <i class="fas fa-quote-left pe-2"></i>
+                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                    praesentium voluptatum deleniti atque corrupti.
+                  </p>
+                  <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="far fa-star fa-sm"></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Inner -->
+      </div>
+      <!-- Carousel wrapper -->
+    </div>
+    </div>
+  </div>
+  <!-- ...........................................testimonials ..........................-->
+
+</div>
+
+
+<script>
+  
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+{% endblock %}
